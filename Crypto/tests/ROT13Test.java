@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -16,7 +17,7 @@ public class ROT13Test {
         String actual = cipher.rotate(s1, 'A');
 
         // Then
-        assertTrue(actual.equals(s2));
+        Assert.assertTrue(actual.equals(s2));
     }
 
     @Test
